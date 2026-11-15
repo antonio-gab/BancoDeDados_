@@ -1,1 +1,1 @@
-
+No T1 a gente mudou o nome da atividade 1 dentro de uma transação. Na primeira vez usamos ROLLBACK, e o nome voltou pro que era antes, ou seja, a mudança foi desfeita. Isso é a atomicidade (ou faz tudo, ou não faz nada). Na segunda vez usamos COMMIT, e o nome novo ficou salvo de vez. Isso é a durabilidade (depois do COMMIT, a mudança não se perde).
