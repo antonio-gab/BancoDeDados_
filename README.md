@@ -1,13 +1,19 @@
-#Projeto: entrega parcial de transações
+# Projeto: entrega parcial de transações (T1 e T2)
 
-PROJETO AVALIATIVO DE APRENDIZAGEM
-Administração de Banco de Dados e Processamento de Transações
+Banco de Dados II - UniCEUB
 Desafio prático: a última vaga | PostgreSQL
 
+## Integrantes
+- Antônio Gabriel
+- Lucas Cerqueira
+- Augusto Gonçalves
+- Thiago 
 
-#########################################################################################
+## Arquivos
+- sql/ -> scripts SQL (A1, A2, T1, T2)
+- evidencias/ -> explicações T1 e T2
 
+## Como rodar
+1. Rodar sql/T1_commit_rollback.sql inteiro no pgAdmin
+2. Abrir 2 abas (sessão A e B) e seguir sql/T2_ultima_vaga.sql passo a passo, alternando as abas
 
-Entregar: desafios T1 e T2: roteiros SQL de COMMIT e ROLLBACK, consultas de verificação, sequência das sessões A/B na disputa pela última vaga, resultados observados e diagnóstico inicial. Registre dúvidas e erros para discussão.
-
-Envie um arquivo ZIP com scripts e evidências; identifique os integrantes no README. Entrega de acompanhamento e correção progressiva, sem pontuação adicional. A solução corrigida será consolidada na entrega final.
