@@ -6,7 +6,7 @@ Desafio prático: a última vaga | PostgreSQL
 ## Integrantes
 - Antônio Gabriel /RA: 22602144
 - Lucas Cerqueira /RA: 22600698
-- Augusto Gonçalves /RA: 
+- Augusto Gonçalves /RA: 22607585
 - Thiago Almeida Bastos /RA: 22604911
 
 ## Arquivos
