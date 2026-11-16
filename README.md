@@ -4,10 +4,10 @@ Banco de Dados II - UniCEUB
 Desafio prático: a última vaga | PostgreSQL
 
 ## Integrantes
-- Antônio Gabriel
-- Lucas Cerqueira
-- Augusto Gonçalves
-- Thiago 
+- Antônio Gabriel /RA: 22602144
+- Lucas Cerqueira /RA: 22600698
+- Augusto Gonçalves /RA: 
+- Thiago Almeida Bastos /RA: 22604911
 
 ## Arquivos
 - sql/ -> scripts SQL (A1, A2, T1, T2)
