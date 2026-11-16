@@ -1,13 +1,5 @@
-#Projeto: entrega parcial de transações
+Entregar: desafios A1 a A4: scripts de estrutura e carga, definição de privilégios, testes de operações permitidas e negadas, arquivo de backup e sequência de restauração em outro banco, comparação dos registros recuperados e observação de sessões.
 
-PROJETO AVALIATIVO DE APRENDIZAGEM
-Administração de Banco de Dados e Processamento de Transações
-Desafio prático: a última vaga | PostgreSQL
+Envie um arquivo ZIP com scripts, backup, README e evidências. Identifique os integrantes, os procedimentos que dependem de privilégios administrativos e as adaptações realizadas. Entrega de acompanhamento e correção progressiva, sem pontuação adicional. Os produtos corrigidos integram a entrega final.
 
-
-#########################################################################################
-
-
-Entregar: desafios T1 e T2: roteiros SQL de COMMIT e ROLLBACK, consultas de verificação, sequência das sessões A/B na disputa pela última vaga, resultados observados e diagnóstico inicial. Registre dúvidas e erros para discussão.
-
-Envie um arquivo ZIP com scripts e evidências; identifique os integrantes no README. Entrega de acompanhamento e correção progressiva, sem pontuação adicional. A solução corrigida será consolidada na entrega final.
+Prazo desta entrega: 23/11/2026, até 23h59 (horário de Brasília).
