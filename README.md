@@ -1,15 +1,15 @@
 Alunos: Augusto Gonçalves Freitas Cordeiro, Antonio Gabriel, Thiago Almeida dos Santos, Lucas Cerqueira
 
 
-A1:
+**A1:**
 
 
 
-A2:
+**A2:**
 
 
 
-Diferença entre Backup e Restauração A3:
+**Diferença entre Backup e Restauração A3:**
 
 Backup (pg_dump): É o procedimento preventivo de extrair uma cópia da estrutura (esquemas, tabelas, restrições) e dos dados de um banco de dados em um determinado instante.
 
