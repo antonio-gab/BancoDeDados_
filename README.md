@@ -11,9 +11,9 @@ Alunos: Augusto Gonçalves Freitas Cordeiro, Antonio Gabriel, Thiago Almeida dos
 
 **Diferença entre Backup e Restauração A3:**
 
-Backup (pg_dump): É o procedimento preventivo de extrair uma cópia da estrutura (esquemas, tabelas, restrições) e dos dados de um banco de dados em um determinado instante.
+**Backup (pg_dump)**: É o procedimento preventivo de extrair uma cópia da estrutura (esquemas, tabelas, restrições) e dos dados de um banco de dados em um determinado instante.
 
-Restauração (pg_restore): É o processo inverso de recuperação, no qual o arquivo de backup gerado anteriormente é lido e importado para um banco de dados de destino .
+**Restauração (pg_restore)**: É o processo inverso de recuperação, no qual o arquivo de backup gerado anteriormente é lido e importado para um banco de dados de destino .
 
 
 
