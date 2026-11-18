@@ -1,0 +1,5 @@
+Backup (pg_dump): É o procedimento preventivo de extrair uma cópia da estrutura (esquemas, tabelas, restrições) e dos dados de um banco de dados em um determinado instante.
+
+Restauração (pg_restore): É o processo inverso de recuperação, no qual o arquivo de backup gerado anteriormente é lido e importado para um banco de dados de destino.
+
+[sequência de comandos usada no backup e na restauração]

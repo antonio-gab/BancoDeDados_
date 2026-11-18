@@ -1,0 +1,1 @@
+select *  from lab_inscricoes.atividades;
