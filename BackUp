@@ -1,83 +1,0 @@
-PGDMP          	        
-    ~         
-   projeto_db    18.4    18.3     ¥           0    0    ENCODING    ENCODING        SET client_encoding = 'UTF8';
-                           false            ¦           0    0 
-   STDSTRINGS 
-   STDSTRINGS     (   SET standard_conforming_strings = 'on';
-                           false            §           0    0 
-   SEARCHPATH 
-   SEARCHPATH     8   SELECT pg_catalog.set_config('search_path', '', false);
-                           false            ¨           1262    132583 
-   projeto_db    DATABASE        CREATE DATABASE projeto_db WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'Portuguese_Brazil.1252';
-    DROP DATABASE projeto_db;
-                     postgres    false                        2615    132584    lab_inscricoes    SCHEMA        CREATE SCHEMA lab_inscricoes;
-    DROP SCHEMA lab_inscricoes;
-                     postgres    false            Ý            1259    132594 
-   atividades    TABLE     Ì   CREATE TABLE lab_inscricoes.atividades (
-    id_atividade integer NOT NULL,
-    nome text NOT NULL,
-    capacidade integer NOT NULL,
-    CONSTRAINT atividades_capacidade_check CHECK ((capacidade > 0))
-);
- &   DROP TABLE lab_inscricoes.atividades;
-       lab_inscricoes         heap r       postgres    false    6            Ü            1259    132585 
-   estudantes    TABLE     f   CREATE TABLE lab_inscricoes.estudantes (
-    id_estudante integer NOT NULL,
-    nome text NOT NULL
-);
- &   DROP TABLE lab_inscricoes.estudantes;
-       lab_inscricoes         heap r       postgres    false    6            ß            1259    132606 
-   inscricoes    TABLE     3  CREATE TABLE lab_inscricoes.inscricoes (
-    id_inscricao integer NOT NULL,
-    id_estudante integer NOT NULL,
-    id_atividade integer NOT NULL,
-    situacao text DEFAULT 'ativa'::text NOT NULL,
-    CONSTRAINT inscricoes_situacao_check CHECK ((situacao = ANY (ARRAY['ativa'::text, 'cancelada'::text])))
-);
- &   DROP TABLE lab_inscricoes.inscricoes;
-       lab_inscricoes         heap r       postgres    false    6            Þ            1259    132605    inscricoes_id_inscricao_seq    SEQUENCE     ó   ALTER TABLE lab_inscricoes.inscricoes ALTER COLUMN id_inscricao ADD GENERATED ALWAYS AS IDENTITY (
-    SEQUENCE NAME lab_inscricoes.inscricoes_id_inscricao_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1
-);
-            lab_inscricoes               postgres    false    6    223                       0    132594 
-   atividades 
-   TABLE DATA           L   COPY lab_inscricoes.atividades (id_atividade, nome, capacidade) FROM stdin;
-    lab_inscricoes               postgres    false    221          Ÿ          0    132585 
-   estudantes 
-   TABLE DATA           @   COPY lab_inscricoes.estudantes (id_estudante, nome) FROM stdin;
-    lab_inscricoes               postgres    false    220   ^       ¢          0    132606 
-   inscricoes 
-   TABLE DATA           `   COPY lab_inscricoes.inscricoes (id_inscricao, id_estudante, id_atividade, situacao) FROM stdin;
-    lab_inscricoes               postgres    false    223   ü       ©           0    0    inscricoes_id_inscricao_seq    SEQUENCE SET     R   SELECT pg_catalog.setval('lab_inscricoes.inscricoes_id_inscricao_seq', 1, false);
-          lab_inscricoes               postgres    false    222                        2606    132604    atividades atividades_pkey 
-   CONSTRAINT     j   ALTER TABLE ONLY lab_inscricoes.atividades
-    ADD CONSTRAINT atividades_pkey PRIMARY KEY (id_atividade);
- L   ALTER TABLE ONLY lab_inscricoes.atividades DROP CONSTRAINT atividades_pkey;
-       lab_inscricoes                 postgres    false    221                       2606    132593    estudantes estudantes_pkey 
-   CONSTRAINT     j   ALTER TABLE ONLY lab_inscricoes.estudantes
-    ADD CONSTRAINT estudantes_pkey PRIMARY KEY (id_estudante);
- L   ALTER TABLE ONLY lab_inscricoes.estudantes DROP CONSTRAINT estudantes_pkey;
-       lab_inscricoes                 postgres    false    220            	           2606    132618    inscricoes inscricoes_pkey 
-   CONSTRAINT     j   ALTER TABLE ONLY lab_inscricoes.inscricoes
-    ADD CONSTRAINT inscricoes_pkey PRIMARY KEY (id_inscricao);
- L   ALTER TABLE ONLY lab_inscricoes.inscricoes DROP CONSTRAINT inscricoes_pkey;
-       lab_inscricoes                 postgres    false    223            
-           2606    132624 '   inscricoes inscricoes_id_atividade_fkey 
-   FK CONSTRAINT     ª   ALTER TABLE ONLY lab_inscricoes.inscricoes
-    ADD CONSTRAINT inscricoes_id_atividade_fkey FOREIGN KEY (id_atividade) REFERENCES lab_inscricoes.atividades(id_atividade);
- Y   ALTER TABLE ONLY lab_inscricoes.inscricoes DROP CONSTRAINT inscricoes_id_atividade_fkey;
-       lab_inscricoes               postgres    false    4871    223    221            
-           2606    132619 '   inscricoes inscricoes_id_estudante_fkey 
-   FK CONSTRAINT     ª   ALTER TABLE ONLY lab_inscricoes.inscricoes
-    ADD CONSTRAINT inscricoes_id_estudante_fkey FOREIGN KEY (id_estudante) REFERENCES lab_inscricoes.estudantes(id_estudante);
- Y   ALTER TABLE ONLY lab_inscricoes.inscricoes DROP CONSTRAINT inscricoes_id_estudante_fkey;
-       lab_inscricoes               postgres    false    220    4869    223                L   xœ3â¨,ÉÈÏã42à2ætÍKOÍËH,ÊLTHIUÎO+)O,Jå44å2äôOËLÎÌKTÈ/.I/J
-ôá4äŠÑãââ Ì0      Ÿ   Ž   xœÍÍ
-‚P†áõÌUÌDößÒ„1
-Ý¶ùÒ
-=0çèÂ«OZ?¼¼•AõxCw˜B)DÞÒÓuäáurjàå¤1÷T-¢\ÙTŽ~‰sß;íÀGºámê¼4aœÁ'º8$ÓY*íÁgªñÁ¢Ë2é9[S^=¤íüZ1óœa1Q      ¢   
-   xœ‹Ñãââ Å ©     
