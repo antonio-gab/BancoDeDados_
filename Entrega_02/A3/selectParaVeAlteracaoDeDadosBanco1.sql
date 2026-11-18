@@ -1,1 +1,1 @@
-select *  from lab_inscricoes.atividades;
+select *  from lab_inscricoes.inscricoes;
