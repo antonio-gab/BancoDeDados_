@@ -23,13 +23,14 @@ Tudo abaixo roda no banco **lab_inscricao**.
 
 **A1**
 
-1. Query 1: `A1_estrutura.sql` -> `A1_dados.sql`
-2. Query 2 (nova): `A1_teste_consulta.sql`
+1. Query 1: `A1_01_estrutura.sql` -> `A1_02_dados.sql`
+2. Query 2 (nova): `A1_03_teste_consulta.sql`
 
 **A2**
 
-1. Query 1: `A2_permissoes.sql`
-2. Query 2 (nova): `A2_testes.sql`, um comando por vez
+1. Query 1: `A2_01_permissoes.sql`
+2. Query 2 (nova): `A2_02_conferencia_adm.sql`
+3. Query 3 (nova): `A2_03_testes_rl_consulta.sql`, um comando por vez
 
 **A3**
 

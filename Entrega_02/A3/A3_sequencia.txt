@@ -23,4 +23,4 @@ SEQUENCIA (backup e restauração feitos pela interface do pgAdmin, que usa o pg
 Recriar os perfis (roles) quando necessário:
 O backup de um banco não inclui os perfis do A2, porque eles pertencem ao servidor, e não ao banco. 
 Como a restauração foi feita no mesmo servidor, os perfis já existiam. Em outro servidor, bastaria 
-rodar o A2_permissoes.sql no banco restaurado, que recria os perfis e as permissões.
+rodar o A2_01_permissoes.sql no banco restaurado, que recria os perfis e as permissões.

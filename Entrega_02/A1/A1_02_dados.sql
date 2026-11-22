@@ -1,5 +1,5 @@
 -- A1 - DADOS
--- rodar depois do A1_estrutura.sql, conectado no lab_inscricao
+-- rodar depois do A1_01_estrutura.sql, conectado no lab_inscricao
 
 -- 10 alunos (sem id: o banco numera sozinho de 1 a 10)
 INSERT INTO lab_inscricoes.estudante (nome)
@@ -33,4 +33,4 @@ VALUES
 (6, 2, 'cancelada');
 
 
--- CONSULTAS EM SESSAO SEPARADA NA PASTA A1_teste_consulta.sql
+-- CONSULTAS EM SESSAO SEPARADA NA PASTA A1_03_teste_consulta.sql

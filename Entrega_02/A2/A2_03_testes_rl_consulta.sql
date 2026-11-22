@@ -1,5 +1,5 @@
 -- A2 - TESTES DE PERMISSAO
--- QUERY 2 (nova), no banco lab_inscricao, depois do A2_permissoes.sql
+-- QUERY 3 (nova), no banco lab_inscricao, depois do A2_02
 -- rodar um comando por vez
 
 -- vira o perfil de consulta
