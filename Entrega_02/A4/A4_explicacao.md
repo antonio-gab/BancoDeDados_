@@ -1,6 +1,6 @@
 # A4 - Observação das sessões
 
-**Consulta:** `A4_sessoes.sql` (pg_stat_activity filtrada pelo banco lab_inscricao)
+**Consulta:** `A4_01_sessao_A.sql e A4_02_sessao_B.sql` (pg_stat_activity filtrada pelo banco lab_inscricao)
 
 ## Resultado na sessão A (só a Query 1 aberta)
 [quantas linhas apareceram, pids e estados]
