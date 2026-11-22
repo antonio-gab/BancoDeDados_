@@ -1,1 +1,0 @@
-select *  from lab_inscricoes.inscricoes;

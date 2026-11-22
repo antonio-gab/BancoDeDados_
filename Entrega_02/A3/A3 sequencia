@@ -1,0 +1,26 @@
+A3 - BACKUP E RESTAURACAO
+
+Backup (pg_dump): É o procedimento preventivo de extrair uma cópia da 
+estrutura (esquemas, tabelas, restrições) e dos dados de um banco de dados em um determinado instante.
+
+Restauração (pg_restore): É o processo inverso de recuperação, no qual 
+o arquivo de backup gerado anteriormente é lido e importado para um banco de dados de destino.
+
+SEQUENCIA (backup e restauração feitos pela interface do pgAdmin, que usa o pg_dump e o pg_restore)
+
+1) Contagem antes: A3_01_contagem_antes.sql no lab_inscricao (10, 3 e 6)
+
+2) Backup: botão direito no banco lab_inscricao -> Backup... -> formato Custom -> arquivo BackupBd
+
+3) Exclusão acidental: A3_02_delete_acidental.sql no lab_inscricao (inscrições ficam 0)
+
+4) Banco novo: botão direito em Databases -> Create -> Database -> lab_inscricaoTeste
+   Restauração: botão direito em lab_inscricaoTeste -> Restore... -> arquivo BackupBd -> Restore
+
+5) Comparação: A3_03_comparacao.sql nos dois bancos
+   lab_inscricao = 0 inscrições (apagadas) | lab_inscricaoTeste = 6 inscrições (recuperadas)
+
+Recriar os perfis (roles) quando necessário:
+O backup de um banco não inclui os perfis do A2, porque eles pertencem ao servidor, e não ao banco. 
+Como a restauração foi feita no mesmo servidor, os perfis já existiam. Em outro servidor, bastaria 
+rodar o A2_permissoes.sql no banco restaurado, que recria os perfis e as permissões.
