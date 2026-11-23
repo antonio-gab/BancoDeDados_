@@ -80,3 +80,12 @@ Resultados e interpretação em `Entrega_02/A4/A4_explicacao.md`.
 - Os testes foram executados em ambiente local (PostgreSQL 18 / pgAdmin 4), utilizando o perfil administrativo postgres.
 - Os perfis foram testados com SET ROLE, sem criar usuários com senha.
 - O backup e a restauração foram feitos pela interface do pgAdmin (Backup/Restore), que usa o pg_dump e o pg_restore.
+
+**BACKUP:**
+
+& "C:\Program Files\PostgreSQL\18\bin\pg_dump.exe" -h localhost -p 5432 -U postgres -d lab_inscricao -F c -f backupTrabalhoBD.dump
+
+
+**RESTORE:**
+
+ & "C:\Program Files\PostgreSQL\18\bin\pg_restore.exe" -h localhost -p 5432 -U postgres -d lab_inscricaoTeste -v --clean --if-exists --no--owner  backupTrabalhoBD.dump ls

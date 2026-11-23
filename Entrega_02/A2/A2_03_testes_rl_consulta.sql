@@ -15,5 +15,5 @@ SELECT * FROM lab_inscricoes.estudante;
 INSERT INTO lab_inscricoes.inscricoes (id_estudante, id_atividade)
 VALUES (7, 2);
 
--- volta a ser postgres (quem abriu a conexao)
+-- volta a ser postgres (quem abriu a coreset nexao)
 RESET ROLE;
