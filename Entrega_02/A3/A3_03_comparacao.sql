@@ -1,4 +1,4 @@
--- A3 - PASSO 5: COMPARACAO DOS DOIS BANCOS
+-- A3_03 - COMPARACAO DOS DOIS BANCOS
 -- rodar este mesmo SELECT em 2 queries:
 --   QUERY 1 no lab_inscricao      -> esperado: 10, 3 e 0 (inscricoes apagadas)
 --   QUERY 2 no lab_inscricaoTeste -> esperado: 10, 3 e 6 (recuperado pelo backup)

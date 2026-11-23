@@ -3,10 +3,15 @@
 **Consulta:** `A4_01_sessao_A.sql e A4_02_sessao_B.sql` (pg_stat_activity filtrada pelo banco lab_inscricao)
 
 ## Resultado na sessão A (só a Query 1 aberta)
-[quantas linhas apareceram, pids e estados]
+Apareceram 2 linhas:
+- pid 32868: idle, Client / ClientRead → conexão do próprio pgAdmin
+- pid 48564: active, NULL → a sessão A, que rodou a consulta
 
 ## Resultado na sessão B (Query 1 e Query 2 abertas)
-[quantas linhas apareceram, pids e estados]
+Apareceram 3 linhas:
+- pid 32868: idle, Client / ClientRead → conexão do próprio pgAdmin
+- pid 48564: idle, Client / ClientRead → a sessão A, agora parada esperando comando
+- pid 46912: active, NULL → a sessão B, que rodou a consulta
 
 ## Significado dos campos
 
